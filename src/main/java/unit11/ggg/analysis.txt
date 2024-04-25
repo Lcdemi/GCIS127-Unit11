@@ -1,0 +1,6 @@
+1. The program goes a lot faster, since there is no longer a wait time between drops.
+    When the sleep is reduced to 0, certain goats hog more turnips in a row when dropped because they have
+    a faster priority to those turnips. This is because the one thread is already active, which gives it priority
+
+2. One goat (usually cyan since its the first thread I start up) hogs all of the turnips because it has
+    a greater priority since it was the first one active.
